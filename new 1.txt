@@ -1,0 +1,19 @@
+<?php
+$conn=mysqli_connect("localhost","root","","admin");
+if(isset($_POST['submit']))
+{
+	$usere=mysqli_real_escape_string($conn,$POST['username']);
+	$password=mysqli_real_escape_string($conn,$POST['Password']);
+	$select_user="SELECT * FROM loginform WHERE Password="$password" AND USER="$usere";
+	$run_user=mysqli_query($conn,$select_user);
+	$check_user=mysqli_num_rows($run_user);
+	if($check_user>0)
+	{
+		header('location:welcome.php');
+		
+	}
+	else
+	{
+		echo"wrong password or username entered";
+	}
+}

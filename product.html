@@ -1,0 +1,211 @@
+<!Doctype html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed|Roboto+Slab" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="pstyle.css">
+<style>
+.container {
+  display: flex;
+  width: 100%;
+  padding: 4% 2%;
+  box-sizing: border-box;
+  height: 100vh;
+}
+
+.box {
+  flex: 1;
+  overflow: hidden;
+  transition: .5s;
+  margin: 0 2%;
+  box-shadow: 0 20px 30px rgba(0,0,0,.5);
+  line-height: 0;
+}
+
+.box > img {
+  width: 200%;
+  height: calc(100% - 10vh);
+  object-fit: cover; 
+  transition: .5s;
+}
+
+.box > span {
+  font-size: 3.8vh;
+  display: block;
+  text-align: center;
+  height: 10vh;
+  line-height: 2.6;
+}
+
+.box:hover { flex: 1 1 50%; }
+.box:hover > img {
+  width: 100%;
+  height: 100%;
+}
+</style>
+</head>
+<body>
+	<div id="slideout-menu">
+	<ul>
+			
+			<li><a href="index.html">HOME</a></li>
+			<li><a href="service.html">services</a></li>
+			<li><a href="product.html">Products&Gifts </a></li>
+			<li><a href="bloglist.html.html">Blog</a></li>
+			<li><a href="appointment.html">Appointment</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><input type="text" placeholder="Search Here"></li>
+			
+		</ul>
+	</div>
+	<!--
+	<div id="banner">
+				<h1>&lt;Beauty Salon&gt;</h1>
+	</div>
+	-->		
+
+	<nav>
+		<div id="logo-img">
+		<a href='#'>
+			<img src="logo.jpg" alt="parlourlogo" height="50" width="150">
+		</a>
+		</div>
+		<div id="menu-icon">
+			<i class="fas fa-bars"></i>
+		</div>
+		<ul>
+			
+			<li><a  href="index.html">HOME</a></li>
+			<li><a href="service.html">services</a></li>
+			<li><a  class="active" href="product.html">Products&Gifts</a></li>
+			<li><a href="about.html">About</a></li>
+			
+			<li><a href="bloglist.html">Blog</a></li>
+			<li><a href="appointment.html">Appointment</a></li>
+			<li>
+			<div id="search-icon">
+			<i class="fas fa-search"></i>
+			</div>
+			</li>
+			</ul>
+			</nav>
+			<div id="searchbox">
+				<input type="text" placeholder="Search Here">
+			</div>
+			<br/>
+			<br/>
+			<br/>
+			<main>
+	<h1 align="center">Products And Gifts </h1>
+<div class="container">
+ 
+  <div class="box">
+	<a href="product1.php">
+    <img src="baby.png" border="3px"></a>
+
+    <span>Baby Products</span>
+	
+  </div>
+   
+   
+    
+  <div class="box">
+	<a href="product1.php">
+    <img src="Herbal.png"></a>
+    <span>Herbal Products</span>
+  </div>
+  
+  
+  
+	<div class="box">
+	<a href="product1.php">
+    <img src="men.png"></a>
+    <span>Men Products</span>
+  </div>
+  
+  
+   
+  <div class="box">
+  <a href="product1.php">
+    <img src="Golden.png" border="3px"></a>
+    <span>Hair Colouring Products</span>
+  </div>
+  <div class="box">
+  <a href="product1.php">
+    <img src="weight.jpg" border="3px"></a>
+    <span>Hair Colouring Products</span>
+  </div>
+  
+  
+</div>
+<footer>
+				<div id="left-footer">
+				<h3>Quick links</h3>
+				<p>
+				<ul>
+				<li>
+				<a href="#">Home</a>
+				</li>
+				<li>
+				<a href="#">About</a>
+				</li>
+				<li>
+				<a href="#">privacy policy</a>
+				</li>
+				
+				<li>
+				<a href="#">Contact us</a>
+				</li>
+				<li>
+				<a href="#">our sevices</a>
+				</li>
+				<li>
+				<a href="#">our Products</a>
+				</li>
+				
+				</ul>
+				</p>
+				</div>
+				<div id="right-footer">
+				<h3>Follow us on</h3>
+				<div id="social-media-footer">
+				<ul>
+					<li>
+					<a href="#">
+					<i class="fab fa-facebook "></i>
+					</a>
+					</li>
+					<li>
+					<a href="#">
+					<i class="fab fa-youtube "></i>
+					</a>
+					</li>
+					<li>
+					<a href="#">
+					<i class="fab fa-github"></i>
+					</a>
+					</li>
+					<li>
+					<a href="#">
+					<i class="fab fa-google-plus"></i>
+					</a>
+					</li>
+					<li>
+					<a href="#">
+					<i class="fab fa-twitter"></i>
+					</a>
+					</li>
+					</ul>
+					</div>
+					<p>This website is devloped by Ayushi Gupta</p>
+					</div>
+					
+			</footer>
+			
+</main>
+
+
+</body>
+</html>
